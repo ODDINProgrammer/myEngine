@@ -1,0 +1,107 @@
+\hypertarget{class_core}{}\doxysection{Core Class Reference}
+\label{class_core}\index{Core@{Core}}
+
+
+{\ttfamily \#include $<$Core.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_core_a776f8c46504b14183883c6273f93eaed}{$\sim$\+Core}} ()
+\item 
+void \mbox{\hyperlink{class_core_aa195a2a33b0f7838e80f72fbcab2a67c}{Update\+Core}} ()
+\item 
+bool \mbox{\hyperlink{class_core_a0c1580aa43d009023395ea31a065d63e}{return\+Core\+Status}} ()
+\item 
+void \mbox{\hyperlink{class_core_aebf3d8173e5b7e5792ebce5328ae2009}{set\+Core\+Status}} (bool \+\_\+status)
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_entity}{Entity}} $>$ \mbox{\hyperlink{class_core_a82116e66e954e2a4d73c4038413b01f9}{add\+Entity}} ()
+\begin{DoxyCompactList}\small\item\em This function adds a pointer to the entity object to the list of entities. \end{DoxyCompactList}\item 
+std\+::sr1\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structrend_1_1_context}{Context}} $>$ \mbox{\hyperlink{class_core_a5208f4cd9f8a4e82d82fcdb323fc769d}{get\+Context}} ()
+\begin{DoxyCompactList}\small\item\em Returns data of object to caller. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_core}{Core}} $>$ \mbox{\hyperlink{class_core_ab9aebe15f85496736cd59b7627c62a47}{initialize}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents the \mbox{\hyperlink{class_core}{Core}} of the Engine Everything runs through this class including the game loop 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_core_a776f8c46504b14183883c6273f93eaed}\label{class_core_a776f8c46504b14183883c6273f93eaed}} 
+\index{Core@{Core}!````~Core@{$\sim$Core}}
+\index{````~Core@{$\sim$Core}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{$\sim$Core()}{~Core()}}
+{\footnotesize\ttfamily Core\+::$\sim$\+Core (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_core_a82116e66e954e2a4d73c4038413b01f9}\label{class_core_a82116e66e954e2a4d73c4038413b01f9}} 
+\index{Core@{Core}!addEntity@{addEntity}}
+\index{addEntity@{addEntity}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{addEntity()}{addEntity()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_entity}{Entity}} $>$ Core\+::add\+Entity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This function adds a pointer to the entity object to the list of entities. 
+
+\mbox{\Hypertarget{class_core_a5208f4cd9f8a4e82d82fcdb323fc769d}\label{class_core_a5208f4cd9f8a4e82d82fcdb323fc769d}} 
+\index{Core@{Core}!getContext@{getContext}}
+\index{getContext@{getContext}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{getContext()}{getContext()}}
+{\footnotesize\ttfamily std\+::sr1\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structrend_1_1_context}{rend\+::\+Context}} $>$ Core\+::get\+Context (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns data of object to caller. 
+
+\mbox{\Hypertarget{class_core_ab9aebe15f85496736cd59b7627c62a47}\label{class_core_ab9aebe15f85496736cd59b7627c62a47}} 
+\index{Core@{Core}!initialize@{initialize}}
+\index{initialize@{initialize}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_core}{Core}} $>$ Core\+::initialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\textbackslash{}breif Initialize the Engine Upon initializing, core creates a S\+DL window Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{class_core_ab9aebe15f85496736cd59b7627c62a47_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_core_a0c1580aa43d009023395ea31a065d63e}\label{class_core_a0c1580aa43d009023395ea31a065d63e}} 
+\index{Core@{Core}!returnCoreStatus@{returnCoreStatus}}
+\index{returnCoreStatus@{returnCoreStatus}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{returnCoreStatus()}{returnCoreStatus()}}
+{\footnotesize\ttfamily bool Core\+::return\+Core\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\textbackslash{}breif Used to return running status to caller. Used in Update() loop for knowing, if program should continue to run \mbox{\Hypertarget{class_core_aebf3d8173e5b7e5792ebce5328ae2009}\label{class_core_aebf3d8173e5b7e5792ebce5328ae2009}} 
+\index{Core@{Core}!setCoreStatus@{setCoreStatus}}
+\index{setCoreStatus@{setCoreStatus}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{setCoreStatus()}{setCoreStatus()}}
+{\footnotesize\ttfamily void Core\+::set\+Core\+Status (\begin{DoxyParamCaption}\item[{bool}]{\+\_\+status }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\textbackslash{}breif Accessor to boolean running. Sets value for running. \mbox{\Hypertarget{class_core_aa195a2a33b0f7838e80f72fbcab2a67c}\label{class_core_aa195a2a33b0f7838e80f72fbcab2a67c}} 
+\index{Core@{Core}!UpdateCore@{UpdateCore}}
+\index{UpdateCore@{UpdateCore}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{UpdateCore()}{UpdateCore()}}
+{\footnotesize\ttfamily void Core\+::\+Update\+Core (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\textbackslash{}breif Main loop of this program. Updates and displays game objects/\+Entities. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{class_core_aa195a2a33b0f7838e80f72fbcab2a67c_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/legendary\+Engine/\mbox{\hyperlink{_core_8h}{Core.\+h}}\item 
+src/legendary\+Engine/\mbox{\hyperlink{_core_8cpp}{Core.\+cpp}}\end{DoxyCompactItemize}

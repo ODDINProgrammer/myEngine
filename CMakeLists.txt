@@ -6,20 +6,16 @@ src
 )
 
 add_library(legendaryEngine
- src/legendaryEngine/lG.cpp
- src/legendaryEngine/Core.cpp
- src/legendaryEngine/Component.cpp
- src/legendaryEngine/Keyboard.cpp
- src/legendaryEngine/Environment.cpp
- src/legendaryEngine/Entity.cpp
- src/legendaryEngine/Screen.cpp
- src/legendaryEngine/Core.h
- src/legendaryEngine/lG.h
- src/legendaryEngine/Component.h
- src/legendaryEngine/Keyboard.h
- src/legendaryEngine/Environment.h
- src/legendaryEngine/Entity.h
- src/legendaryEngine/Screen.h)
+src/legendaryEngine/Component.cpp
+src/legendaryEngine/Component.h
+src/legendaryEngine/Core.cpp
+src/legendaryEngine/Core.h
+src/legendaryEngine/Entity.cpp
+src/legendaryEngine/Entity.h
+src/legendaryEngine/MyRenderer.cpp
+src/legendaryEngine/MyRenderer.h
+src/legendaryEngine/stb_image.h
+)
 
 add_library(rend
 src/rend/Exception.cpp
@@ -41,8 +37,7 @@ target_link_libraries(legendaryEngine rend SDL2)
 
 add_executable(game
  src/game/main.cpp
- src/game/tempComponent.h
- src/game/tempComponent.cpp)
+ )
 
 target_link_libraries(game
  legendaryEngine)

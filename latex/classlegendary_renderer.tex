@@ -1,0 +1,109 @@
+\hypertarget{classlegendary_renderer}{}\doxysection{legendary\+Renderer Class Reference}
+\label{classlegendary_renderer}\index{legendaryRenderer@{legendaryRenderer}}
+
+
+{\ttfamily \#include $<$My\+Renderer.\+h$>$}
+
+
+
+Inheritance diagram for legendary\+Renderer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=178pt]{classlegendary_renderer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for legendary\+Renderer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=178pt]{classlegendary_renderer__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classlegendary_renderer_af3f8cb34c0d29288ecb75d65674c08b6}{on\+Display}} ()
+\item 
+void \mbox{\hyperlink{classlegendary_renderer_adcf937bdf77ca3d5a8bd0da3a6b5f91b}{Set\+Model}} (std\+::string \+\_\+model\+\_\+source\+\_\+path)
+\item 
+void \mbox{\hyperlink{classlegendary_renderer_a8e8f84769a0b13b30c614cdf535f59ba}{Set\+Texture}} (char const $\ast$\+\_\+texture\+\_\+source\+\_\+path)
+\item 
+void \mbox{\hyperlink{classlegendary_renderer_ab0f8e0424aa5c0339a9d801f1da49190}{Set\+Model\+Settings}} (glm\+::vec3 \+\_\+mod\+\_\+\+Transform, float \+\_\+rotation)
+\item 
+void \mbox{\hyperlink{classlegendary_renderer_acc65e3c57f3ca445451c518669607126}{Rotate\+Constantly}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Renderer Class This class has an access to public members of \mbox{\hyperlink{class_component}{Component}}. It handles the open\+GL for creating a shape out of mesh data and puting textures on that object. Also has functions for setting rotation and object possition. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classlegendary_renderer_af3f8cb34c0d29288ecb75d65674c08b6}\label{classlegendary_renderer_af3f8cb34c0d29288ecb75d65674c08b6}} 
+\index{legendaryRenderer@{legendaryRenderer}!onDisplay@{onDisplay}}
+\index{onDisplay@{onDisplay}!legendaryRenderer@{legendaryRenderer}}
+\doxysubsubsection{\texorpdfstring{onDisplay()}{onDisplay()}}
+{\footnotesize\ttfamily void legendary\+Renderer\+::on\+Display (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_component}{Component}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classlegendary_renderer_af3f8cb34c0d29288ecb75d65674c08b6_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classlegendary_renderer_acc65e3c57f3ca445451c518669607126}\label{classlegendary_renderer_acc65e3c57f3ca445451c518669607126}} 
+\index{legendaryRenderer@{legendaryRenderer}!RotateConstantly@{RotateConstantly}}
+\index{RotateConstantly@{RotateConstantly}!legendaryRenderer@{legendaryRenderer}}
+\doxysubsubsection{\texorpdfstring{RotateConstantly()}{RotateConstantly()}}
+{\footnotesize\ttfamily void legendary\+Renderer\+::\+Rotate\+Constantly (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\textbackslash{}breif Sets corresponsible boolean to determine spinning. \mbox{\Hypertarget{classlegendary_renderer_adcf937bdf77ca3d5a8bd0da3a6b5f91b}\label{classlegendary_renderer_adcf937bdf77ca3d5a8bd0da3a6b5f91b}} 
+\index{legendaryRenderer@{legendaryRenderer}!SetModel@{SetModel}}
+\index{SetModel@{SetModel}!legendaryRenderer@{legendaryRenderer}}
+\doxysubsubsection{\texorpdfstring{SetModel()}{SetModel()}}
+{\footnotesize\ttfamily void legendary\+Renderer\+::\+Set\+Model (\begin{DoxyParamCaption}\item[{std\+::string}]{\+\_\+model\+\_\+source\+\_\+path }\end{DoxyParamCaption})}
+
+\textbackslash{}breif Defines an object using path to the mesh file. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classlegendary_renderer_adcf937bdf77ca3d5a8bd0da3a6b5f91b_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classlegendary_renderer_ab0f8e0424aa5c0339a9d801f1da49190}\label{classlegendary_renderer_ab0f8e0424aa5c0339a9d801f1da49190}} 
+\index{legendaryRenderer@{legendaryRenderer}!SetModelSettings@{SetModelSettings}}
+\index{SetModelSettings@{SetModelSettings}!legendaryRenderer@{legendaryRenderer}}
+\doxysubsubsection{\texorpdfstring{SetModelSettings()}{SetModelSettings()}}
+{\footnotesize\ttfamily void legendary\+Renderer\+::\+Set\+Model\+Settings (\begin{DoxyParamCaption}\item[{glm\+::vec3}]{\+\_\+mod\+\_\+\+Transform,  }\item[{float}]{\+\_\+rotation }\end{DoxyParamCaption})}
+
+\textbackslash{}breif Sets position and rotation, and defines if object is spinning or not. \mbox{\Hypertarget{classlegendary_renderer_a8e8f84769a0b13b30c614cdf535f59ba}\label{classlegendary_renderer_a8e8f84769a0b13b30c614cdf535f59ba}} 
+\index{legendaryRenderer@{legendaryRenderer}!SetTexture@{SetTexture}}
+\index{SetTexture@{SetTexture}!legendaryRenderer@{legendaryRenderer}}
+\doxysubsubsection{\texorpdfstring{SetTexture()}{SetTexture()}}
+{\footnotesize\ttfamily void legendary\+Renderer\+::\+Set\+Texture (\begin{DoxyParamCaption}\item[{char const $\ast$}]{\+\_\+texture\+\_\+source\+\_\+path }\end{DoxyParamCaption})}
+
+\textbackslash{}breif Puts texture on object using path to the texture file. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classlegendary_renderer_a8e8f84769a0b13b30c614cdf535f59ba_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/legendary\+Engine/\mbox{\hyperlink{_my_renderer_8h}{My\+Renderer.\+h}}\item 
+src/legendary\+Engine/\mbox{\hyperlink{_my_renderer_8cpp}{My\+Renderer.\+cpp}}\end{DoxyCompactItemize}
